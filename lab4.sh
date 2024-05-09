@@ -16,4 +16,11 @@ elif [ "$1" = "--logs" ]; then
         echo "Utworzony przez: $0" >> "$filename"
         echo "Data utworzenia: $(date)" >> "$filename"
     done
+elif [ "$1" = "--help" ]; then
+    echo "Dostêpne opcje:"
+    echo "--date : Wyœwietla dzisiejsz¹ datê"
+    echo "--logs [liczba_plików] : Tworzy automatycznie podan¹ liczbê plików logx.txt"
+    echo "--help : Wyœwietla wszystkie dostêpne opcje"
+else
+    echo "Nieznana opcja. U¿yj '--help' aby wyœwietliæ dostêpne opcje."
 fi
